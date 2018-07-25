@@ -1,14 +1,13 @@
 package co.paulfran.paulfranco.githubapiapp.activity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import co.paulfran.paulfranco.githubapiapp.ImageDownloader;
 import co.paulfran.paulfranco.githubapiapp.R;
@@ -105,7 +104,9 @@ public class UserActivity extends AppCompatActivity{
 
     public void loadOwnRepos(View view) {
 
-
+        Intent intent = new Intent(UserActivity.this, Repositories.class);
+        intent.putExtra("username", newString);
+        startActivity(intent);
 
     }
 }
