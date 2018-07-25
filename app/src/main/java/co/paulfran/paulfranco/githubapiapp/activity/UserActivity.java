@@ -1,4 +1,4 @@
-package co.paulfran.paulfranco.githubapiapp;
+package co.paulfran.paulfranco.githubapiapp.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import co.paulfran.paulfranco.githubapiapp.R;
 
 public class UserActivity extends AppCompatActivity{
 
